@@ -1,0 +1,31 @@
+.tim-header{
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.intestazione{
+	background-color: #4a9ce3;
+	color: #ffffff;
+	border: 1.5px solid #3c4e52;
+}
+
+.box_categ {
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.single-smartlife{
+ 	padding: 1.5px;
+	margin-bottom: 5%;
+}
+
+@media (max-width: 767px) {
+	.single-smartlife{
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: 5%;
+	}
+}

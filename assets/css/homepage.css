@@ -1,0 +1,87 @@
+/* Flexslider */
+.flex_row {
+	margin:auto; 
+}
+
+.flexslider {
+ margin: 0 0 30px; 
+ background: #f8f8f8; 
+ border: 0;
+ border-top: 3px solid #357ebd; 
+ position: relative; 
+ -webkit-border-radius: 0; 
+ -moz-border-radius: 0; 
+ -o-border-radius: 0; 
+ border-radius: 0; 
+}
+.flex-control-paging li a {
+ width: 12px; 
+ height: 12px;
+ padding: 2px;
+ background: #357ebd; 
+ cursor: pointer; 
+ text-indent: -9999px; 
+ -webkit-border-radius: 20px; 
+ -moz-border-radius: 20px; 
+ -o-border-radius: 20px; 
+ border-radius: 20px; 
+ box-shadow: none;
+}
+.slides li {position: relative;}
+.flex-caption {
+ position: absolute;
+ top: 35%;
+ right: 8%;
+}
+.flex-caption-text span {
+ display: inline-block;
+ font-size: 34px;
+ font-weight: bold;
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ margin: 2px 0;
+ padding: 0 15px;
+ background-color: rgba(53, 126, 189, 0.8);
+}
+
+.box-progetto{
+	margin-top:12.5%;
+}
+
+@media screen and (max-width: 767px) {
+ 	.flex-control-nav, .flex-control-pager, .flex-caption {display: none;}
+ 
+	 #lancio-progetti{
+		margin-top:80px;
+	 }
+	 
+	 .flex_row {
+		height:0px;
+		width:0px;
+	 }
+	 
+	 
+	 
+}
+
+/* Sezione progetti in evidenza */
+
+.box-progetto {
+ margin-bottom: 10%;
+ margin-left: 5%;
+ margin-right: 5%;
+ padding: 10%;
+ background-color: #93c8f4;
+ -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+ box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+}
+.box-progetto h3, .box-progetto h4 {margin-top: 0;}
+
+/* Footer */
+
+footer {
+ padding: 25px;
+ margin-top: 3%;
+ margin-bottom: 4%;
+ background-color: #4a9ce3;
+ color: #fff;
+}

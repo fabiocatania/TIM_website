@@ -1,0 +1,23 @@
+.first-row{
+  margin-top: 120px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.second-row{
+  margin-top: 30px;
+    margin-left: -10px;
+  margin-right: -10px;
+}
+
+.text_box{
+	font-size: 20px;
+}
+
+@media (max-width: 767px) {
+	.single-product{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+}
