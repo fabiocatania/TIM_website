@@ -32,7 +32,8 @@ text-align: center;
 }
 
 .product-image{
-  height: 300px;
+  height: auto;
+  width:auto;
   margin: auto;
 }
 
