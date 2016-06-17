@@ -4,3 +4,14 @@
   top:-105px;
   visibility: hidden;
 }
+
+#connectedBT{
+	margin-left: 270px;	
+}
+
+@media (max-width: 991px){
+	#connectedBT{
+	padding-top: 5px;
+	margin-left: 50px;	
+}	
+}

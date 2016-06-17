@@ -13,6 +13,18 @@
 .single-smartlife{
  	padding: 1.5px;
  	margin-bottom: 5%;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+ 	
+	.single-smartlife{
+		padding: 1.5px;
+		margin-bottom: 5%;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
 }
 
 @media (max-width: 767px) {

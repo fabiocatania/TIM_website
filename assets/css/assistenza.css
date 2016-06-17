@@ -30,6 +30,7 @@ a#ass_text{
     font-size: 20px;
     color: #fff;
     font-weight: bold;
+	padding-left: 10px;
 }
 
 @media (min-width:1200px) {
