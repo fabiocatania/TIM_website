@@ -1,0 +1,36 @@
+.tim-header{
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.intestazione{
+	background-color: #4a9ce3;
+	color: #ffffff;
+	border: 1.5px solid #3c4e52;
+}
+
+.single-smartlife{
+ 	padding: 1.5px;
+ 	margin-bottom: 5%;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+ 	
+	.single-smartlife{
+		padding: 1.5px;
+		margin-bottom: 5%;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.single-smartlife{
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: 5%;
+	}
+}

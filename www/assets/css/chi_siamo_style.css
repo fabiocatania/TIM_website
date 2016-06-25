@@ -1,0 +1,31 @@
+.tim-header{
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+#submenu{
+ margin-left: 20px; 
+}
+
+#group-image{
+  max-width: 20%;
+  min-width: 20%;
+}
+
+.intestazione{
+	background-color: #4a9ce3;
+	color: #ffffff;
+	border: 1.5px solid #3c4e52;
+}
+
+p{
+	text-align: justify;	
+}
+
+.anchor{
+  display: block;
+  position: relative;
+  top:-105px;
+  visibility: hidden;
+}

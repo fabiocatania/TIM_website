@@ -1,0 +1,47 @@
+.tim-header{
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.intestazione{
+	background-color: #4a9ce3;
+	color: #ffffff;
+	border: 1.5px solid #3c4e52;
+}
+
+.thumbox{
+	background-color: #ffffff;
+	border: 1.5px solid #3c4e52;
+}
+
+.single-product{
+  padding: -50px;
+}
+
+.product-price{
+text-align: center;
+}
+
+.product-name{
+text-align: center;
+}
+
+.dettagli-button{
+  text-align: center;
+}
+
+.product-image{
+  height: auto;
+  width:auto;
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+	
+	.single-product{
+  		margin-left: 20%;
+		margin-right: 20%;
+		margin-bottom: 5%;
+	}
+}
