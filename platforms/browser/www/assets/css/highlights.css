@@ -1,0 +1,57 @@
+.tim-header{
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.intestazione{
+	background-color: #4a9ce3;
+	color: #ffffff;
+	border: 1.5px solid #3c4e52;
+}
+
+.highbox{
+	background-color: #4a9ce3;
+	border-radius: 17px;
+	height: 125px;
+	color: #ffffff;
+	border: 1.5px solid #3c4e52;
+	padding: 20px;
+}
+
+a#text_list{
+	color: #f0f0f0;
+	
+}
+
+text#title_box{
+    font-weight: bold;
+}
+
+.first-row{
+		margin-top: 30px;
+	}
+	
+.faq-box{
+	background-color: #4a9ce3;
+	color: #ffffff;
+	border: 1.5px solid #3c4e52;
+}
+@media (min-width:768px){
+	.first-row{
+		margin-bottom: 20px;
+	}
+	
+	.highbox{
+	
+	}
+	
+}
+
+@media (max-width:767px){
+	.highbox{
+		margin-bottom: 20px;
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+}
