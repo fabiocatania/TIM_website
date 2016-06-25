@@ -4,7 +4,7 @@
 //echo "I'm the php";
 
 //connection to db
-$mysqli = new mysqli("localhost", "root", "", "my_fabiotim");
+$mysqli = new mysqli("localhost", "fabiotim", "", "my_fabiotim");
 
 if (mysqli_connect_errno()) { //verify connection
     echo "Error to connect to DBMS: ".mysqli_connect_error(); //notify error
@@ -14,7 +14,7 @@ else {
     //echo "Successful connection"; // connection ok
 
     # extract results mysqli_result::fetch_array
-    $query = "SELECT * FROM hl_title";
+    $query = "SELECT * FROM assistance_service";
     //query execution
     $result = $mysqli->query($query);
     //if there are data available

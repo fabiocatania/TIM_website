@@ -7,7 +7,7 @@ function fillProducts(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "./assets/php/get_products_by_category.php", //Relative or absolute path to file.php file
+        url: "http://fabiotim.altervista.org/assets/php/get_products_by_category.php", //Relative or absolute path to file.php file
         data: {categoryID:id},
         success: function(response) {
             console.log(JSON.parse(response));
@@ -20,7 +20,7 @@ function fillProducts(){
             for(var i=0;i<products.length;i++){
                 console.log(products[i].name);
                 
-                el+= "<div class='col-sm-4 col-md-4 single-product'> <div class='thumbnail'> <a href='device.html?categoryID="+products[i].product_category_id+"?productID="+products[i].productID+"'> <img class='img-responsive' src='"+products[i].photo_preview+"'alt='"+products[i].name+"' id='pic_preview'> </a><div class='caption'> <h3 class='product-name'><a href='device.html'>"+products[i].name+"</a></h3> <p class='product-price'>"+products[i].price+"</p> <p class='dettagli-button'><a href='device.html?categoryID="+products[i].product_category_id+"?productID="+products[i].productID+"' class='btn btn-primary' role='button'>Dettagli</a></p> </div> </div> </div>";                
+                el+= "<div class='col-sm-4 col-md-4 single-product'> <div class='thumbnail'> <a href='device.html?categoryID="+products[i].categoryID+"?productID="+products[i].productID+"'> <img class='img-responsive' src='"+products[i].photo_preview+"'alt='"+products[i].name+"' id='pic_preview'> </a><div class='caption'> <h3 class='product-name'><a href='device.html?categoryID="+products[i].categoryID+"?productID="+products[i].productID+"'>"+products[i].name+"</a></h3> <p class='product-price'>"+products[i].price+"</p> <p class='dettagli-button'><a href='device.html?categoryID="+products[i].categoryID+"?productID="+products[i].productID+"' class='btn btn-primary' role='button'>Dettagli</a></p> </div> </div> </div>";                
 
             }
             

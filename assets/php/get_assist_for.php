@@ -4,7 +4,7 @@
 //echo "I'm the php";
 
 //connection to db
-$mysqli = new mysqli("localhost", "root", "", "my_fabiotim");
+$mysqli = new mysqli("localhost", "fabiotim", "", "my_fabiotim");
 
 if (mysqli_connect_errno()) { //verify connection
     echo "Error to connect to DBMS: ".mysqli_connect_error(); //notify error
@@ -13,10 +13,10 @@ if (mysqli_connect_errno()) { //verify connection
 else {
     //echo "Successful connection"; // connection ok
 
-	$categoryID = $_POST['categoryID'];
+	$productID = $_POST['productID'];
 
     # extract results mysqli_result::fetch_array
-    $query = "SELECT * FROM big_title_ascat JOIN bt_ascat ON bt_id = bt WHERE ass_cat_id='".$categoryID."'";
+    $query = "SELECT * FROM product_category JOIN product ON product_category.product_category_id = product.categoryID WHERE product.productID='".$productID."'";
     
     $result = $mysqli->query($query);
     //if there are data available

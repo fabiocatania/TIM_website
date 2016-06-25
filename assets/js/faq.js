@@ -7,7 +7,7 @@ function fillDataProduct(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "./assets/php/getFAQ.php", //Relative or absolute path to file.php file
+        url: "http://fabiotim.altervista.org/assets/php/getFAQ.php", //Relative or absolute path to file.php file
         data: {slID:id},
         success: function(response) {
             console.log(JSON.parse(response));
@@ -23,13 +23,15 @@ function fillDataProduct(){
 		   sidebar += " <li><a href='SL_descrizione.html?categoryID="+result[0].sl_categoryID+"?slID="+result[0].slID+"' id='no_active'>Descrizione</a></li>";
 		   sidebar += "   <ul class='nav nav-stacked' id='submenu'></ul>";    
 		   sidebar += " <li><a href='attivazione_e_regole.html?categoryID="+result[0].sl_categoryID+"?slID="+result[0].slID+"' id='no_active'>Attivazione e regole</a></li>";
-		   sidebar += " <li class='active'><a href='faq.html?categoryID="+result[0].sl_categoryID+"?slID="+result[0].slID+"'>FAQ</a></li>";
-
+          
+          if (result[0].faq == 1){
+       sidebar += " <li class='active'><a href='faq.html?categoryID="+result[0].sl_categoryID+"?slID="+result[0].slID+"'>FAQ</a></li>"; 
+          }
+		   
           for(var i=0;i<result.length;i++){
                 console.log(result[i].slID);
                 
-                el+= "<li><p>"+result[i].question+" </p><p>"+result[i].answer+"</p></li> ";                
-
+                el+= "<div class='panel panel-default faq-box'><div class='panel-body'><h4 class='panel-title'>"+result[i].question+"</h4><p>"+result[i].answer+"</p></div></div>";                
             }
           
           

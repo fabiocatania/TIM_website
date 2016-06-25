@@ -84,3 +84,11 @@ footer {
  background-color: #4a9ce3;
  color: #fff;
 }
+
+#social{
+  padding-bottom: 10px; 
+}
+
+.linked-social{
+  color: darkblue;
+}

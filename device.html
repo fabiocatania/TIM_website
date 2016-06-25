@@ -13,20 +13,28 @@
 	</head>
 	<body>
 
-<html> 
+ 
   <head> 
     <script src="assets/js/jquery.js"></script> 
     <script> 
     $(function(){
       $("#includedContent").load("bar.html"); 
     });
-    </script> 
+    </script>
+    
+    <script> 
+    function changeImage(a) {
+			document.getElementById("preview").src = a;
+			console.log("FUNZIONA!");
+	}
+    </script>
+    
   </head> 
 
   <body> 
      <div id="includedContent"></div>
   </body> 
-</html>
+
 
 
     <!-- Begin Body -->
@@ -36,7 +44,7 @@
   <div class="row" id="glance"></div>  <!-- row -->               
                 
                 
-                <hr>  
+                <hr class='red_hr'><hr class='white_hr'>  
   
   
   

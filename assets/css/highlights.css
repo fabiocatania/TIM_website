@@ -31,7 +31,12 @@ text#title_box{
 .first-row{
 		margin-top: 30px;
 	}
-
+	
+.faq-box{
+	background-color: #4a9ce3;
+	color: #ffffff;
+	border: 1.5px solid #3c4e52;
+}
 @media (min-width:768px){
 	.first-row{
 		margin-bottom: 20px;
