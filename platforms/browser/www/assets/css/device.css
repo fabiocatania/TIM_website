@@ -1,0 +1,49 @@
+.device-content{
+  margin: auto;
+}
+
+.main-image-section{
+  padding-right: 5%;
+  padding-left: 5%;
+  
+}
+
+.little-product-image-section{
+ 	margin-top: 10px; 
+}
+
+.main-img{
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.little-img{
+  	margin-left: auto;
+  	margin-right: auto;
+	cursor:pointer;
+}
+
+@media (max-width: 767px){
+	.little-img{
+		display:none;
+	}
+  
+  .smartlife-container{
+    min-width: 200px;
+    width: 30%;
+    height: auto;
+  }
+  
+  .product-name{
+    display: none;
+  }	
+}
+
+.product-name{
+text-align: center;
+}
+
+
+.smartlife-container{
+  margin-top: 20px;
+}
