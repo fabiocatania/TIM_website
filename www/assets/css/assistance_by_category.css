@@ -4,3 +4,9 @@
   top:-105px;
   visibility: hidden;
 }
+
+.faq-box{
+	background-color: #4a9ce3;
+	color: #ffffff;
+	border: 1.5px solid #3c4e52;
+}

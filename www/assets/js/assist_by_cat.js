@@ -57,8 +57,8 @@ function fillLinkedAS(){
             var list="";
 
 			for(var i=0;i<result.length;i++){
-					list += "<li><h4><a href='servizio_di_assistenza.html?categoryID"+result[i].ass_categoryID+"?serviceID="+result[i].assistance_service_id+"'>"+result[i].assistance_service_name+"</a></h4></li>";      
-				} 
+					list+= "<div class='panel panel-default faq-box'><div class='panel-body'><h4 class='panel-title'><a id='text_list' href='servizio_di_assistenza.html?categoryID="+result[i].ass_categoryID+"?serviceID="+result[i].assistance_service_id+"'>"+result[i].assistance_service_name+"</a></h4></div></div>"
+				}
 	
 				$('#as_list').html(list);  
 

@@ -21,14 +21,15 @@ function fillDataProduct(){
           
 			navpath += "<div class='panel-body'> <h3 class='panel-title tim-header'><a href='prodotti.html'>Prodotti</a> > <a href='devices_by_category.html?categoryID="+device[0].product_category_id+"'>"+device[0].product_category_name+"</a> > "+device[0].name+"</h3> </div>";
                 
-             glance+= "<div class='col-md-6 main-image-section'><div class='row'><img id='preview' class='thumbnail' src='"+device[0].bigphoto+"' class='img-responsive main-img'> </div>";
-			 glance+="<div class='row'><div class='col-sm-3 col-md-3 little-product-image-section'><a href='#'><img class='img-responsive thumbnail little-img' src='"+device[0].miniphoto1+"' onclick='changeImage('"+ device[0].miniphoto1+"');'>";
-			 glance+="</a></div><div class='col-sm-3 col-md-3 little-product-image-section'><a href='#'><img class='img-responsive thumbnail little-img' src='"+device[0].miniphoto2+"' onclick='changeImage('"+ device[0].miniphoto2+"');'></a>";
+             glance+= "<div class='col-md-6 main-image-section'><div class='row'><img id='preview' src='"+device[0].miniphoto1+"' class='img-responsive main-img thumbnail'> </div>";
+			 glance+="<div class='row'><div class='col-sm-3 col-md-3 little-product-image-section'><img class='img-responsive thumbnail little-img' src='"+device[0].miniphoto1+"' onclick=changeImage('"+ device[0].miniphoto1+"');>";
+			 glance+="</a></div><div class='col-sm-3 col-md-3 little-product-image-section'><img class='img-responsive thumbnail little-img' src='"+device[0].miniphoto2+"' onclick=changeImage('"+ device[0].miniphoto2+"');>";
 			 glance+="</div><div class='col-sm-3 col-md-3 little-product-image-section'>";
-			 glance+="<a href='#'> <img class='img-responsive thumbnail little-img' src='"+device[0].miniphoto3+"' onclick='changeImage('"+ device[0].miniphoto3+"');'></a></div> <div class='col-sm-3 col-md-3 little-product-image-section'><a href='#'><img class='img-responsive thumbnail little-img' src='"+device[0].miniphoto4+"' onclick='changeImage('"+ device[0].miniphoto4+"');'>";
+			 glance+="<img class='img-responsive thumbnail little-img' src='"+device[0].miniphoto3+"' onclick=changeImage('"+ device[0].miniphoto3+"');></div> <div class='col-sm-3 col-md-3 little-product-image-section'><img class='img-responsive thumbnail little-img' src='"+device[0].miniphoto4+"' onclick=changeImage('"+ device[0].miniphoto4+"');>";
 			 glance+="</a></div></div></div><div class='col-md-6'><h2>"+device[0].name+"</h2> <hr class='red_hr'><hr class='white_hr'><p> Caratteristiche:";
 			 glance+="</p><li>"+device[0].caratt1+"</li><li>"+device[0].caratt2+"</li>";
-			 glance+="<li>"+device[0].caratt3+"</li><li>"+device[0].caratt4+"</li><hr class='red_hr'><hr class='white_hr'><p>Colore: "+device[0].coloridisp1+" "+device[0].coloridisp2+"</p>  	";
+			 glance+="<li>"+device[0].caratt3+"</li><li>"+device[0].caratt4+"</li><hr class='red_hr'><hr class='white_hr'>";
+			 glance+="<p>Colore: "+device[0].coloridisp1+" "+device[0].coloridisp2+"</p>";
 			 glance+="<hr class='red_hr'><hr class='white_hr'><p>Prezzo: "+device[0].price+" </p><hr class='red_hr'><hr class='white_hr'> <button type='button' class='btn btn-default btn-lg'><span class='glyphicon glyphicon-star' aria-hidden='true'></span> Acquista</button> </div>";
           
           
@@ -95,7 +96,8 @@ function fillLinkedSL(){
         }
     });
 }
-
+/*
 function changeImage(a) {
 			document.getElementById("preview").src=a;
 }
+*/
