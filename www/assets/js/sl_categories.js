@@ -16,13 +16,13 @@ function fillCategories(){
             for(var i=0;i<categories.length;i++){
                 console.log(categories[i].name);
                 if(i < 2){
-					first_row += "	<div class='row'><div class='col-sm-3 col-md-3 single-product'>";
+					first_row += "	<div class='col-sm-3 col-md-3 single-product'>";
 					first_row += "	<div class='thumbnail'><a href='smartlife_by_category.html?categoryID="+categories[i].sl_category_id+"'>";
 					first_row += "	<img class='img-responsive' src='"+categories[i].picture+"' alt='"+categories[i].sl_category_name+"'>";
 					first_row += "	</a></div><a href='smartlife_by_category.html?categoryID="+categories[i].sl_category_id+"' class='btn btn-primary btn-large btn-block'>"+categories[i].sl_category_name+"</a></div>";
 				}
 				else{
-					second_row += "	<div class='row'><div class='col-sm-3 col-md-3 single-product'>";
+					second_row += "	<div class='col-sm-3 col-md-3 single-product'>";
 					second_row += "	<div class='thumbnail'><a href='smartlife_by_category.html?categoryID="+categories[i].sl_category_id+"'>";
 					second_row += "	<img class='img-responsive' src='"+categories[i].picture+"' alt='"+categories[i].sl_category_name+"'>";
 					second_row += "	</a></div><a href='smartlife_by_category.html?categoryID="+categories[i].sl_category_id+"' class='btn btn-primary btn-large btn-block'>"+categories[i].sl_category_name+"</a></div>";

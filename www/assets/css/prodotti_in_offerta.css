@@ -18,6 +18,7 @@
 	margin-right: 10%;
 	padding-top: 6%;
 	padding-bottom: 0%;
+	margin-bottom:6%;
 	border-radius: 10px;
 }
 
@@ -46,6 +47,11 @@ text-align: center;
 }
 
 @media (max-width: 767px) {
+	
+	.thumbox{
+		margin-left: 0%;
+		margin-right: 0%;
+	}
 	
 	.single-product{
   		margin-left: 20%;

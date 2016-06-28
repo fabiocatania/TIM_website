@@ -1,8 +1,3 @@
-body {
-	background-image:url("../img/sfondo.png");
-	background-size: 1300px 1000px;
-	background-repeat: no-repeat;
-}
 .single-product{
 	padding-bottom: 1%;
 }
@@ -38,6 +33,14 @@ text-align: center;
 }
 
 @media (min-width: 1200px){
+	
+	body {
+		background-image:url("../img/sfondo.png");
+		background-size: 1300px 1000px;
+		background-repeat: no-repeat;
+	}
+
+	
 	.thumbox{
 		height: 380px;	
 	}
@@ -45,23 +48,27 @@ text-align: center;
 
 
 @media (min-width: 992px) and (max-width: 1199px){
+	
+	body {
+		background-image:url("../img/sfondo.png");
+		background-size: 1300px 1000px;
+		background-repeat: no-repeat;
+	}
+
+	
 	.thumbox{
 		height: 360px;	
 	}
 }
 
 @media (min-width: 768px) and (max-width: 991px){
+	
 	.thumbox{
 		height: 365px;	
 	}
 }
 
 @media(max-width:767px){
-	
-	.thumbox{
-		margin-left: 10%;
-		margin-right: 10%;
-	}
 	
 	.single-product{
   		margin-left: 20%;

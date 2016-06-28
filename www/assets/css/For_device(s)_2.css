@@ -11,7 +11,9 @@
 	background-color: #ffffff;
 	border: 1.5px solid #3c4e52;
 	padding: 4%;
+	padding-bottom: 0%;
 	padding-top: 6%;
+	margin-bottom:6%;
 	border-radius: 10px;
 }
 
@@ -44,12 +46,6 @@ text-align: center;
 }
 
 @media (max-width: 767px) {
-	
-	.thumbox{
-		margin-left: 10%;
-		margin-right: 10%;
-		padding-bottom: 2%;
-	}
 	
 	.single-product{
   		margin-left: 20%;

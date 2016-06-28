@@ -85,7 +85,7 @@ function fillLinkedSL(){
 			connectedSL += "<h2>Servizi Smart Life collegati</h2><div class='row'>";
 			
 				for(var i=0;i<result.length;i++){
-						  connectedSL += "<div class='col-sm-4 col-md-3 single-product'><div class='thumbnail smartlife-container'><a href='SL_descrizione.html?categoryID="+result[i].sl_categoryID+"?slID="+result[i].slID+"'><img class='img-responsive' src='"+result[i].sl_photo_preview+"' alt='"+result[i].name+"'></a> <div class='caption'> <h3 class='product-name'><a href='SL_descrizione.html?categoryID="+result[i].sl_categoryID+"?slID="+result[i].slID+"'>"+result[i].sl_name+"</a></h3></div></div></div>";
+						  connectedSL += "<div class='col-sm-4 col-md-3 single-product'><div class='thumbnail smartlife-container'><a href='SL_descrizione.html?categoryID="+result[i].sl_categoryID+"?slID="+result[i].slID+"'><img class='img-responsive' src='"+result[i].sl_photo_preview+"' alt='"+result[i].name+"'></a> <div class='caption product-name'> <h3><a href='SL_descrizione.html?categoryID="+result[i].sl_categoryID+"?slID="+result[i].slID+"'>"+result[i].sl_name+"</a></h3></div></div></div>";
 				
 				}
 				
