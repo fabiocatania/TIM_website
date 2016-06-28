@@ -7,7 +7,7 @@ function fillProducts(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "http://fabiotim.altervista.org/assets/php/get_sl_by_category.php", //Relative or absolute path to file.php file
+        url: "http://fabiostim.altervista.org/assets/php/get_sl_by_category.php", //Relative or absolute path to file.php file
         data: {categoryID:id},
         success: function(response) {
             console.log(JSON.parse(response));

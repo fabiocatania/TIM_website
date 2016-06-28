@@ -1,23 +1,32 @@
+body {
+	background-image:url("../img/sfondo.png");
+	background-size: 1300px 1000px;
+	background-repeat: no-repeat;
+}
 .single-product{
-  padding: 1.5px;
+	padding-bottom: 1%;
 }
 
-#pic_preview{
-
+.product-image{
   max-height: 65%;
+  width:auto;
   margin:auto;
+  
 }
 
-.thumbnail{
-		height:400px;
-		padding: 0%;
-		padding-top: 10%;
-		padding-bottom: 15%;
-				border-radius: 30px;
-	}
+.thumbox{
+	background-color: #ffffff;
+	border: 1.5px solid #3c4e52;
+	padding: 4%;
+	padding-top: 6%;
+	padding-bottom: 0%;
+	margin-bottom:6%;
+	border-radius: 10px;
+}
 
 .product-price{
-text-align: center;
+	text-align: center;
+	color:#333;
 }
 
 .product-name{
@@ -28,19 +37,36 @@ text-align: center;
   text-align: center;
 }
 
+@media (min-width: 1200px){
+	.thumbox{
+		height: 380px;	
+	}
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.thumbox{
+		height: 360px;	
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.thumbox{
+		height: 365px;	
+	}
+}
+
 @media(max-width:767px){
-	#pic_preview{
-  	max-height:90%;
-  	margin:auto;
+	
+	.thumbox{
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 	
-	.thumbnail{
-		margin-left: 15%;
-		margin-right: 15%;
-		margin-bottom:10%;
-		padding-top:5%;
-		padding-bottom:25%;
-		border-radius: 30px;
+	.single-product{
+  		margin-left: 20%;
+		margin-right: 20%;
+		margin-bottom: -1%;
 	}
 
 }

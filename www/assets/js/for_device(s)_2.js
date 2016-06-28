@@ -7,7 +7,7 @@ function fillAssistByCat(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "http://fabiotim.altervista.org/assets/php/get_servizio_di_assistenza.php", //Relative or absolute path to file.php file
+        url: "http://fabiostim.altervista.org/assets/php/get_servizio_di_assistenza.php", //Relative or absolute path to file.php file
         data: {serviceID:id},
         success: function(response) {
             console.log(JSON.parse(response));
@@ -49,7 +49,7 @@ function fillDevices(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "./assets/php/get_devices_for_as.php", //Relative or absolute path to file.php file
+        url: "http://fabiostim.altervista.org/assets/php/get_devices_for_as.php", //Relative or absolute path to file.php file
         data: {serviceID:id},
         success: function(response) {
             console.log(JSON.parse(response));
@@ -58,12 +58,12 @@ function fillDevices(){
 			
 			for(var i=0;i<device.length;i++){
 					devices+= "<div class='col-sm-3 col-md-3 single-product'>";
-				   devices+= "<div class='thumbnail'>";
+				   devices+= "<div class='thumbnail thumbox'>";
 				   devices+= "<a href='device.html?categoryID="+device[i].categoryID+"?productID="+device[i].productID+"'>";
 					devices+=  "<img class='img-responsive' src='"+device[i].photo_preview+"' alt='...'>";
 				   devices+= "</a>";
 				  devices+=  "<div class='caption'>";
-					devices+=  "<h3 class='product-name'><a href='device.html?categoryID="+device[i].categoryID+"?productID="+device[i].productID+"'>"+device[i].name+"</a></h3>";
+					devices+=  "<h4 class='product-name'><a href='device.html?categoryID="+device[i].categoryID+"?productID="+device[i].productID+"'>"+device[i].name+"</a></h4>";
 					 devices+=   "<p class='product-price'> "+device[i].price+"</p>";
 					 devices+=   "<p class='dettagli-button'><a href='device.html?categoryID="+device[i].categoryID+"?productID="+device[i].productID+"' class='btn btn-primary' role='button'>Dettagli</a></p>";
 					devices+=  "</div>";

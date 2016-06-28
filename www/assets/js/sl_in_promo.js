@@ -7,7 +7,7 @@ function fillPromoSL(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "http://fabiotim.altervista.org/assets/php/get_sl_in_promo.php", //Relative or absolute path to file.php file
+        url: "http://fabiostim.altervista.org/assets/php/get_sl_in_promo.php", //Relative or absolute path to file.php file
         data: {productID:id},
         success: function(response) {
             console.log(JSON.parse(response));

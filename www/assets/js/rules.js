@@ -7,7 +7,7 @@ function fillDataProduct(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "http://fabiotim.altervista.org/assets/php/getSL.php", //Relative or absolute path to file.php file
+        url: "http://fabiostim.altervista.org/assets/php/getSL.php", //Relative or absolute path to file.php file
         data: {slID:id},
         success: function(response) {
             console.log(JSON.parse(response));
@@ -24,7 +24,7 @@ function fillDataProduct(){
                 if (result[0].faq == 1){
 		   sidebar += " <li><a href='faq.html?categoryID="+result[0].sl_categoryID+"?slID="+result[0].slID+"' id='no_active'>FAQ</a></li>";
                 }
-			var el= "<h2>Attivazione e regole</h2>"+result[0].sl_rules+"<hr class='red_hr'><hr class='white_hr'> ";                
+			var el= "<h2>Attivazione e regole</h2><p>"+result[0].sl_rules+"</p><hr class='red_hr'><hr class='white_hr'> ";                
 
          
           $('#header').html(header); 

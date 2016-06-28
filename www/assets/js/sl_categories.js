@@ -7,7 +7,7 @@ function fillCategories(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "http://fabiotim.altervista.org/assets/php/get_category_sl.php", //Relative or absolute path to file.php file
+        url: "http://fabiostim.altervista.org/assets/php/get_category_sl.php", //Relative or absolute path to file.php file
         success: function(response) {
             console.log(JSON.parse(response));
             var categories=JSON.parse(response);

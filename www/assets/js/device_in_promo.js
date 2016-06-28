@@ -7,7 +7,7 @@ function fillPromoProducts(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "http://fabiotim.altervista.org/assets/php/get_device_in_promo.php", //Relative or absolute path to file.php file
+        url: "http://fabiostim.altervista.org/assets/php/get_device_in_promo.php", //Relative or absolute path to file.php file
         data: {productID:id},
         success: function(response) {
             console.log(JSON.parse(response));
@@ -22,7 +22,7 @@ function fillPromoProducts(){
 					content+="<a href='device.html?categoryID="+products[i].categoryID+"?productID="+products[i].productID+"'>";
 					  content+="<img class='img-responsive product-image' src='"+products[i].photo_preview+"' alt='"+products[i].name+"'></a>";
 					content+="<div class='caption'>";
-					  content+="<h5 class='product-name'><a href='device.html?categoryID="+products[i].categoryID+"?productID="+products[i].productID+"'>"+products[i].name+"</a></h3>";
+					  content+="<h4 class='product-name'><a href='device.html?categoryID="+products[i].categoryID+"?productID="+products[i].productID+"'>"+products[i].name+"</a></h4>";
 						content+="<p class='product-price'>"+products[i].price+"</p>";
 						content+="<p class='dettagli-button'><a href='device.html?categoryID="+products[i].categoryID+"?productID="+products[i].productID+"' class='btn btn-primary' role='button'>Dettagli</a></p></div></div></div>";
 				}

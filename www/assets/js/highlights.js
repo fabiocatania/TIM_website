@@ -5,7 +5,7 @@ function fillHighlights(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "http://fabiotim.altervista.org/assets/php/get_highlights.php", //Relative or absolute path to file.php file
+        url: "http://fabiostim.altervista.org/assets/php/get_highlights.php", //Relative or absolute path to file.php file
         success: function(response) {
             console.log(JSON.parse(response));
             var high=JSON.parse(response);

@@ -7,7 +7,7 @@ function fillDataProduct(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "http://fabiotim.altervista.org/assets/php/getSL.php", //Relative or absolute path to file.php file
+        url: "http://fabiostim.altervista.org/assets/php/getSL.php", //Relative or absolute path to file.php file
         data: {slID:id},
         success: function(response) {
             console.log(JSON.parse(response));
@@ -68,7 +68,7 @@ function fillLinkedProducts(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "./assets/php/get_linkedProducts.php", //Relative or absolute path to file.php file
+        url: "http://fabiostim.altervista.org/assets/php/get_linkedProducts.php", //Relative or absolute path to file.php file
         data: {slID:id},
         success: function(response) {
             console.log(JSON.parse(response));
@@ -80,11 +80,14 @@ function fillLinkedProducts(){
             
             il +="<li><a href='#sec2' id='no_active'>Prodotti</a></li>";
             
-           for(var i=0;i<result.length;i++){
-             connectedProducts += "<p id='sec2' class= 'anchor'> </p>	<h2>Prodotti</h2>";
-          	connectedProducts += "<div class='row'> <div class='col-sm-4 col-md-3 single-product'> <div class='thumbnail'> <a href='device.html?categoryID="+result[i].categoryID+"?productID="+result[i].productID+"'><img class='img-responsive' src='"+result[i].photo_preview+"' alt='"+result[i].name +"'></a><div class='caption'><h3 class='product-name'><a href='device.html?categoryID="+result[i].categoryID+"?productID="+result[i].productID+"'>"+result[i].name +"</a></h3></div></div></div></div><hr class='red_hr'><hr class='white_hr'>";
-    
-          }    
+			connectedProducts += "<p id='sec2' class= 'anchor'> </p>	<h2>Prodotti</h2> <div class='row'> ";
+					
+				   for(var i=0;i<result.length;i++){
+					connectedProducts += "<div class='col-sm-4 col-md-3 single-product'> <div class='thumbnail thumbox'> <a href='device.html?categoryID="+result[i].categoryID+"?productID="+result[i].productID+"'><img class='img-responsive' src='"+result[i].photo_preview+"' alt='"+result[i].name +"'></a><div class='caption'><h4 class='product-name'><a href='device.html?categoryID="+result[i].categoryID+"?productID="+result[i].productID+"'>"+result[i].name +"</a></h4></div></div></div>";
+			
+				  }    
+		  
+		  	connectedProducts += "</div><hr class='red_hr'><hr class='white_hr'>";
 		  
 		  $('#submenu').append(il);
           $('#products-section').html(connectedProducts);

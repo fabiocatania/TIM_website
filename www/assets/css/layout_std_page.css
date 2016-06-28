@@ -6,6 +6,38 @@ body {
 	overflow-x: hidden;
 }
 
+p{
+	color: #f0f0f0;
+	text-align: justify;
+}
+
+h1{
+	color: #f8f8f8;
+}
+
+h2{
+	color: #f8f8f8;
+}
+
+h4{
+	color: #f8f8f8;
+}
+
+h5{
+	color: #f8f8f8;
+}
+
+h6{
+	color: #f8f8f8;
+}
+
+h6{
+	color: #f8f8f8;
+}
+
+li{
+	color: #f8f8f8;
+}
 
 .red_hr{
     border-top: 2px solid #dc0026

@@ -7,7 +7,7 @@ function fillAssistByCat(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "http://fabiotim.altervista.org/assets/php/get_assist_by_cat.php", //Relative or absolute path to file.php file
+        url: "http://fabiostim.altervista.org/assets/php/get_assist_by_cat.php", //Relative or absolute path to file.php file
         data: {categoryID:id},
         success: function(response) {
             console.log(JSON.parse(response));
@@ -49,7 +49,7 @@ function fillLinkedAS(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "./assets/php/get_linked_AS.php", //Relative or absolute path to file.php file
+        url: "http://fabiostim.altervista.org/assets/php/get_linked_AS.php", //Relative or absolute path to file.php file
         data: {categoryID:id},
         success: function(response) {
             console.log(JSON.parse(response));
@@ -57,7 +57,7 @@ function fillLinkedAS(){
             var list="";
 
 			for(var i=0;i<result.length;i++){
-					list+= "<div class='panel panel-default faq-box'><div class='panel-body'><h4 class='panel-title'><a id='text_list' href='servizio_di_assistenza.html?categoryID="+result[i].ass_categoryID+"?serviceID="+result[i].assistance_service_id+"'>"+result[i].assistance_service_name+"</a></h4></div></div>"
+					list+= "<div class='panel panel-default faq-box'><div class='panel-body'><h4 class='panel-title'><a id='text_list' href='servizio_di_assistenza.html?categoryID="+result[i].ass_categoryID+"?serviceID="+result[i].assistance_service_id+"'>"+result[i].assistance_service_name+"</a></h4></div></div>";
 				}
 	
 				$('#as_list').html(list);  

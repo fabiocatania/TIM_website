@@ -7,7 +7,7 @@ function fillDataProduct(){
         method: "POST",
         //dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "http://fabiotim.altervista.org/assets/php/getFAQ.php", //Relative or absolute path to file.php file
+        url: "http://fabiostim.altervista.org/assets/php/getFAQ.php", //Relative or absolute path to file.php file
         data: {slID:id},
         success: function(response) {
             console.log(JSON.parse(response));
@@ -31,7 +31,7 @@ function fillDataProduct(){
           for(var i=0;i<result.length;i++){
                 console.log(result[i].slID);
                 
-                el+= "<div class='panel panel-default faq-box'><div class='panel-body'><h4 class='panel-title'>"+result[i].question+"</h4><p>"+result[i].answer+"</p></div></div>";                
+                el+= "<div class='panel panel-default faq-box'><div class='panel-body'><h4 class='panel-title' id='question'>"+result[i].question+"</h4><p id='answer'>"+result[i].answer+"</p></div></div>";                
             }
           
           
