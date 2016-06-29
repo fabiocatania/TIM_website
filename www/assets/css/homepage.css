@@ -47,6 +47,31 @@
 	margin-top:12.5%;
 }
 
+@media(min-width:992px){
+	.p_iva{
+		display:inline-block;
+		float:right;
+		margin-top: 6px;
+	}
+	
+	#social{
+		display:inline-block;
+	}
+	
+	#footer-navigazione{
+		margin-bottom: -10px;
+	}
+}
+@media(max-width:991px) and (min-width: 768px) {
+	.p_iva{
+		display:block;	
+	}
+	
+	#footer-navigazione{
+		 text-align: center;
+	 }
+}
+
 @media screen and (max-width: 767px) {
  	.flex-control-nav, .flex-control-pager, .flex-caption {display: none;}
  
@@ -58,8 +83,20 @@
 		display:none;
 	 }
 	 
+	 #footer-navigazione{
+		 text-align: center;
+	 }
 	 
+	 .p_iva{
+		display:block;	
+	}
 	 
+}
+
+@media (max-width:540px){
+	#name_social{
+		display:none;
+	}
 }
 
 /* Sezione progetti in evidenza */
