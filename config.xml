@@ -9,15 +9,8 @@
   <plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0"/>
   <plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2"/>
   <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0"/>
-  <icon src="www/assets/img/icon.png"/>
-  <platform name="android">
-    <icon src="www/assets/img/icon.png" density="ldpi"/>
-    <icon src="www/assets/img/icon.png" density="mdpi"/>
-    <icon src="www/assets/img/icon.png" density="hdpi"/>
-    <icon src="www/assets/img/icon.png" density="xhdpi"/>
-    <icon src="www/assets/img/icon.png" density="xxhdpi"/>
-    <icon src="www/assets/img/icon.png" density="xxxhdpi"/>
-  </platform>
+  <icon src="res/drawable/icon.png"/>
+  
   <platform name="wp8">
     <icon src="www/assets/img/icon.png" platform="wp8" width="99" height="99"/>
     <icon src="www/assets/img/icon.png" platform="wp8" width="159" height="159"/>
