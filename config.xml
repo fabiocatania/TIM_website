@@ -6,15 +6,9 @@
   <content src="index.html"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="14"/>
-  <plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0"/>
-  <plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2"/>
   <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0"/>
-  <icon src="res/drawable/icon.png"/>
+  <icon src="assets/www/assets/img/icon.png"/>
   
-  <platform name="wp8">
-    <icon src="www/assets/img/icon.png" platform="wp8" width="99" height="99"/>
-    <icon src="www/assets/img/icon.png" platform="wp8" width="159" height="159"/>
-  </platform>
   <access origin="*"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
