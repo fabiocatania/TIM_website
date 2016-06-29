@@ -6,31 +6,21 @@
   <content src="index.html"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="14"/>
-  <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2"/>
-  <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1"/>
   <plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0"/>
   <plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2"/>
-  <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.0"/>
-  <plugin name="cordova-plugin-file" source="npm" spec="~4.1.1"/>
-  <plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.5.0"/>
-  <plugin name="cordova-plugin-globalization" source="npm" spec="~1.0.3"/>
-  <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.3.0"/>
-  <plugin name="cordova-plugin-media" source="npm" spec="~2.2.0"/>
   <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0"/>
-  <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2"/>
-  <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
-  <icon src="www/assets/img/logo.jpg"/>
+  <icon src="www/assets/img/icon.png"/>
   <platform name="android">
-    <icon src="www/assets/img/logo.jpg" density="ldpi"/>
-    <icon src="www/assets/img/logo.jpg" density="mdpi"/>
-    <icon src="www/assets/img/logo.jpg" density="hdpi"/>
-    <icon src="www/assets/img/logo.jpg" density="xhdpi"/>
-    <icon src="www/assets/img/logo.jpg" density="xxhdpi"/>
-    <icon src="www/assets/img/logo.jpg" density="xxxhdpi"/>
+    <icon src="www/assets/img/icon.png" density="ldpi"/>
+    <icon src="www/assets/img/icon.png" density="mdpi"/>
+    <icon src="www/assets/img/icon.png" density="hdpi"/>
+    <icon src="www/assets/img/icon.png" density="xhdpi"/>
+    <icon src="www/assets/img/icon.png" density="xxhdpi"/>
+    <icon src="www/assets/img/icon.png" density="xxxhdpi"/>
   </platform>
   <platform name="wp8">
-    <icon src="www/assets/img/logo.jpg" platform="wp8" width="99" height="99"/>
-    <icon src="www/assets/img/logo.jpg" platform="wp8" width="159" height="159"/>
+    <icon src="www/assets/img/icon.png" platform="wp8" width="99" height="99"/>
+    <icon src="www/assets/img/icon.png" platform="wp8" width="159" height="159"/>
   </platform>
   <access origin="*"/>
   <allow-intent href="http://*/*"/>
