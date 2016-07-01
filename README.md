@@ -7,7 +7,7 @@ We used:
 
 //update of README.md on the 1st July.
 
-We implemented fabiostim.altervista.org wrt the IDMs already produced in the design phase.
+We implemented http://fabiostim.altervista.org/ wrt the IDMs already produced in the design phase.
 
 Our TIM website presents a simple and intuitive graphics, characterized by the repetition of the colors blue, white and red. We humbly and thoughtfully took care of the look and feel of the website also thanks to the use of graphics editor softwares, as Photoshop. 
 The site is responsive and works pretty well also from mobile devices.
